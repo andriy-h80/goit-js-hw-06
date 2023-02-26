@@ -8,11 +8,11 @@ buttonIncRef.addEventListener('click', onButtonIncClick);
 let counterValue = 0;
 
 function onButtonDecClick(event) {
-    console.log(counterValue -= 1);
+    counterValue -= 1;
     valueRef.textContent = counterValue;
 };
 
 function onButtonIncClick(event) {
-    console.log(counterValue += 1);
+    counterValue += 1;
     valueRef.textContent = counterValue;
 };
