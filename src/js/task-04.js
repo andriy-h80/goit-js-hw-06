@@ -1,5 +1,3 @@
-// const counterRef = document.querySelector('#counter');
-
 const valueRef = document.querySelector('#value');
 const buttonDecRef = document.querySelector('[data-action="decrement"]');
 const buttonIncRef = document.querySelector('[data-action="increment"]');

@@ -16,16 +16,16 @@ const ingredients = [
 //     ulRef.append(ingrRef);
 //   });
 
-const ulRef = document.querySelector("#ingredients");
+const ulRef = document.querySelector('#ingredients');
 
 const addIngrToList = ingredients => {
-  ingredients.map(ingredient => {
-    const ingrRef = document.createElement("li");
+  return ingredients.map(ingredient => {
+    const ingrRef = document.createElement('li');
     ingrRef.textContent = ingredient;
-    ingrRef.classList.add("item");
-    ulRef.append(ingrRef);
+    ingrRef.classList.add('item');
+    return ingrRef;
   });
 };
 
-addIngrToList(ingredients);
+ulRef.append(...addIngrToList(ingredients));
 
