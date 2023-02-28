@@ -12,12 +12,12 @@ const boxesRef = document.querySelector('#boxes');
 createBtn.addEventListener("click", createBoxes);
 destroyBtn.addEventListener("click", destroyBoxes);
 
-const arrayRef = [];
-
 function createBoxes() {
   const amount = inputRef.value;
   let size = 30;
 
+  const arrayRef = [];
+  
   for (let i = 1; i <= amount; i += 1) {
     const newBoxes = document.createElement('div');
     newBoxes.style.backgroundColor = getRandomHexColor();
